@@ -1,0 +1,183 @@
+.main-pr-Page .heading {
+    font-size: 18px;
+}
+.main-profile-area {
+    padding: 30px;
+    .user-img {
+        width: 160px;
+        height: 160px;
+        object-fit: cover;
+    }
+    .btn-settings {
+        font-size: 14px;
+        font-weight: 500;
+        color: #000;
+        padding: 8px 16px;
+        background-color: #FAFAFA;
+        border: 1px solid #E3E5ED;
+        border-radius: 8px;
+        i {
+            font-size: 18px;
+        }
+    }
+    .name {
+        color: #16181E;
+        font-weight: 600;
+        font-size: 30px;
+    }
+    .badge-lvl {
+        font-size: 20px;
+    }
+    .bings-label {
+        font-size: 20px;
+        display: inline;
+        background: #E8F1FE;
+        color: #1872F6;
+        border-radius: 44px;
+        padding: 10px 20px;
+        i {
+            font-size: 16px;
+            background-color: #D3E4FD;
+            border-radius: 100%;
+            padding: 8px;
+        }
+    }
+    .mail {
+        font-size: 18px;
+    }
+    .list {
+        li {
+            display: inline-block;
+            margin-right: 40px;
+            margin-bottom: 4px;
+            a {
+                font-weight: 500;
+                font-size: 20px;
+                color: #75869C;
+            }
+        }
+    }
+}
+
+.main-pr-other-area {
+    padding: 30px;
+    .box-heading {
+        font-size: 24px;
+        font-weight: 600;
+        color: #16181E;
+    }
+    .link-items {
+        .item {
+            width: 100%;
+            padding: 20px 0;
+            border-bottom: 1px solid #E3E5ED;
+            &:last-child {
+                border-bottom: 0;
+                padding-bottom: 0;
+            }
+        }
+        .item-heading {
+            font-size: 20px;
+            color: #1C293E;
+            i {
+                font-size: 22px;
+                color: #1872F6;
+            }
+        }
+        .right-icon {
+            font-size: 20px;
+        }
+        .bonus-text {
+            font-size: 12px;
+            color: #767B92;
+            margin-left: 42px;
+            .bings-label {
+                background: #E8F1FE;
+                color: #1872F6;
+                border-radius: 44px;
+                padding: 0px 6px;
+            }
+        }
+    }
+}
+
+// share my profile modal
+.share-profile-modal {
+    .modal-content {
+        background-color: #F8F9FD;
+        padding: 30px 20px 30px 36px;
+    }
+    .modal-header {
+        padding-bottom: 26px !important;
+        .heading {
+            color: #000;
+            i {
+                font-size: 20px;
+                color: #1872F6;
+                background-color: #E3E5ED;
+                padding: 6px 12px;
+                margin-right: 4px;
+                border-radius: 4px;
+            }
+        }
+        .btn-close {
+            padding: 0px;
+            margin-right: 8px;
+        }
+    }
+    .recent-share {
+        padding: 16px 0;
+        border-bottom: 1px solid #DEE0E2;
+        .item {
+            text-align: center;
+            max-width: 20%;
+        }
+        .img-area {
+            max-width: 50px;
+            margin: 0 auto;
+        }
+        .user-img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            margin-bottom: 4px;
+        }
+        .sc-img {
+            width: 20px;
+            height: 20px;
+            object-fit: cover;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        h6 {
+            font-size: 12px;
+            line-height: 18px;
+            color: #16181E;
+        }
+    }
+    .share-icons {
+        padding-top: 16px;
+        text-align: center;
+        img {
+            margin-bottom: 6px;
+        }
+        h6 {
+            font-size: 12px;
+            line-height: 18px;
+            color: #16181E;
+        }
+    }
+    .link-item {
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 16px;
+        color: #000;
+    }
+    .edit-actions {
+        a {
+            color: #1872F6;
+            font-weight: 500;
+        }
+    }
+}

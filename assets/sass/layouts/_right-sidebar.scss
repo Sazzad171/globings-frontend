@@ -1,0 +1,71 @@
+.right-sidebar-area {
+    position: fixed;
+    right: 0;
+    top: 0;
+    max-width: 400px;
+    height: 100vh;
+    margin-left: auto;
+    overflow-y: auto;
+    border-left: 1px solid #E3E5ED;
+    padding: 36px 40px 16px 24px;
+    .my-profile-box {
+        img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+        }
+        .mid-col {
+            width: 64%;
+            padding: 0 10px;
+        }
+        .designation {
+            font-size: 14px;
+            line-height: 18px;
+            color: #767B92;
+        }
+        .switch-link {
+            font-size: 14px;
+        }
+    }
+    .suggestion-people-box {
+        .heading {
+            font-size: 18px;
+        }
+        .all-link {
+            font-size: 14px;
+        }
+        img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+        }
+        .mid-col {
+            width: 52%;
+            padding: 0 10px;
+        }
+        .designation {
+            font-size: 14px;
+            line-height: 18px;
+            color: #767B92;
+        }
+    }
+    .quick-link-box {
+        li {
+            display: inline-block;
+            a {
+                color: #B7BAC9;
+            }
+        }
+    }
+    .copyright-text {
+        color: #B7BAC9;
+    }
+}
+
+// responsiveness
+@include max-media-width(1199) {
+    .right-sidebar-area {
+        max-width: 335px;
+        padding: 36px 18px 16px 14px;
+    }
+}

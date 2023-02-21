@@ -1,0 +1,50 @@
+// mobile and tab header
+.header-sm-dv {
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    padding: 10px 0;
+    border-bottom: 1px solid #E3E5ED;
+    z-index: 1000;
+    .menu-box {
+        ul {
+            text-align: right;
+        }
+        li {
+            display: inline-block;
+            margin-left: 14px;
+            i {
+                font-size: 22px;
+                color: #7B7B7B;
+            }
+        }
+    }
+    .search-box {
+        .input-group-text {
+            background: #E9E9E9;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border: 0;
+            padding: 10px 4px 7px 14px;
+        }
+        .form-control {
+            background: #E9E9E9;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border: 0;
+            padding: 6px 8px;
+        }
+    }
+    .icon {
+        font-size: 24px;
+        color: #7B7B7B;
+    }
+}
+
+
+@include max-media-width(991) {
+    main {
+        margin-top: 114px !important;
+    }
+}

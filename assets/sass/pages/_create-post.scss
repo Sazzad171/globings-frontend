@@ -1,0 +1,157 @@
+.create-post-modal {
+    .my-profile {
+        .main-img {
+            img {
+                height: 60px;
+                width: 60px;
+                object-fit: cover;
+            }
+        }
+        .name {
+            font-size: 18px;
+        }
+    }
+
+    // floating label
+    .floating-label-group {
+        position: relative;
+        input {
+            padding: 16px;
+            font-size: 16px;
+            font-weight: 600;
+            border: 1px solid #E3E5ED !important;
+            border-radius: 8px;
+            transition: all 0.1s ease;
+        }
+        .floating-label {
+            font-size: 16px;
+            color: #75869C;
+            position: absolute;
+            pointer-events: none;
+            top: 18px;
+            left: 18px;
+            transition: all 0.1s ease;
+        }
+        input:focus {
+            padding: 40px 16px 16px;
+        }
+        input:focus ~ .floating-label {
+            top: 16px;
+        }
+    }
+
+    // rating
+    .rate {
+        height: 42px;
+        padding: 4px 10px;
+        margin-top: 60px;
+    }
+    .rate:not(:checked) > input {
+        position:absolute;
+        top:-9999px;
+    }
+    .rate:not(:checked) > label {
+        width:1em;
+        overflow:hidden;
+        white-space:nowrap;
+        cursor:pointer;
+        font-size:30px;
+        color:#ccc;
+    }
+    .rate:not(:checked) > label:before {
+        content: '★ ';
+    }
+    .rate > input:checked ~ label {
+        color: #1872F6;    
+    }
+    .rate:not(:checked) > label:hover,
+    .rate:not(:checked) > label:hover ~ label {
+        color: #1872F6;  
+    }
+    .rate > input:checked + label:hover,
+    .rate > input:checked + label:hover ~ label,
+    .rate > input:checked ~ label:hover,
+    .rate > input:checked ~ label:hover ~ label,
+    .rate > label:hover ~ input:checked ~ label {
+        color: #1872F6;
+    }
+    textarea {
+        padding: 16px;
+        font-size: 16px;
+        border-radius: 8px;
+        border: 1px solid #E3E5ED !important;
+        &::placeholder {
+            font-size: 14px;
+        }
+    }
+    .add-photos-box {
+        padding: 50px 16px;
+        cursor: pointer;
+        p {
+            font-size: 12px;
+            color: #B0B2B4;
+        }
+    }
+    .already-added-photos {
+        padding: 16px;
+        .img-item {
+            margin-right: 8px;
+            margin-bottom: 4px;
+            display: inline-block;
+            img {
+                width: 100px;
+                height: 100px;
+                object-fit: cover;
+                border-radius: 4px;
+            }
+            i.bi-x {
+                position: absolute;
+                top: 8px;
+                right: 10px;
+                background-color: #fff;
+                color: #1C293E;
+                padding: 1px 3px;
+                font-size: 18px;
+                z-index: 10;
+                border-radius: 100%;
+            }
+        }
+    }
+    .ad-pt-more-box {
+        width: 100px;
+        height: 100px;
+        background-color: #eee;
+        border-radius: 4px;
+        text-align: center;
+        cursor: pointer;
+        padding: 16px 6px;
+        font-size: 16px;
+    }
+    .btn {
+        border-radius: 10px;
+        &.disabled-btn {
+            background: #E3E5ED;
+            color: #B0B2B4;
+        }
+    }
+}
+
+// successful post modal
+.successful-post-modal {
+    .modal-body {
+        padding: 60px 40px 40px;
+    }
+     i {
+        font-size: 30px;
+        padding: 13px 16px;
+        color: #fff;
+        background-color: #1872F6;
+        border-radius: 100%;
+     }
+     h6 {
+        font-size: 26px;
+     }
+     .btn {
+        font-weight: 500;
+     }
+}

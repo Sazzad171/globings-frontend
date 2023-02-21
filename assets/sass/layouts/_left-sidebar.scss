@@ -1,0 +1,101 @@
+.left-sidebar-area {
+  position: fixed;
+  left: 0;
+  top: 0;
+  max-width: 320px;
+  height: 100vh;
+  overflow-y: auto;
+  border-right: 1px solid #e3e5ed;
+  padding: 36px 22px 30px 36px;
+  @include customScrollbarTable();
+  .logo-box {
+    margin-bottom: 20px;
+  }
+  .search-box {
+    margin-bottom: 20px;
+    .input-group-text {
+      background: #fafafa;
+      border-top-left-radius: 24px;
+      border-bottom-left-radius: 24px;
+      border: 0;
+      padding: 12px 10px 12px 18px;
+    }
+    .form-control {
+      background: #fafafa;
+      border-top-right-radius: 24px;
+      border-bottom-right-radius: 24px;
+      border: 0;
+      padding: 12px;
+    }
+  }
+  .menu-items {
+    li {
+      margin-bottom: 4px;
+      a {
+        color: $dark;
+        font-weight: 500;
+        border-radius: 24px;
+        padding: 10px 16px;
+        i {
+          font-size: 18px;
+        }
+        &:hover {
+          background: #fafafa;
+          color: $blue;
+        }
+        &.active {
+          background: #fafafa;
+          color: $blue;
+        }
+      }
+    }
+  }
+}
+
+.left_sidebar_menu_wrapper {
+  ul {
+    a {
+      display: flex;
+      align-items: center;
+      gap: 10px 16px;
+      svg {
+        max-width: 24px;
+      }
+      span {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #1c293e;
+      }
+      &.active {
+        span {
+          color: #1872f6;
+        }
+        path {
+          fill: #1872f6;
+          stroke: #1872f6;
+          &:nth-child(2),
+          &:nth-child(3) {
+            stroke: white;
+          }
+        }
+        rect {
+          fill: #1872f6;
+          stroke: #1872f6;
+          & ~ path {
+            stroke: white;
+            fill: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+// responsiveness
+@include max-media-width(1199) {
+  .left-sidebar-area {
+    max-width: 250px;
+    padding: 36px 12px 26px 10px;
+  }
+}

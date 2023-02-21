@@ -1,0 +1,56 @@
+.follow-page-heading {
+    .name {
+        font-size: 18px;
+    }
+}
+.follow-tab-box {
+    padding: 24px;
+    .nav-pills {
+        .nav-link {
+            font-size: 18px;
+            font-weight: 500;
+            color: #75869C;
+            border-bottom: 1px solid #E3E5ED !important;
+            border-radius: 0;
+            padding: 0 16px 16px;
+            &.active {
+                border-bottom: 2px solid #1872F6 !important;
+                color: #1872F6;
+                background-color: #fff;
+            }
+        }
+    }
+    .person-item {
+        .img-box {
+            min-width: 60px;
+        }
+        img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+        }
+        .mid-col {
+            width: 60%;
+            padding: 0 10px;
+        }
+        .user-name {
+            font-size: 18px;
+        }
+        .badge-text {
+            font-size: 14px;
+            line-height: 18px;
+            color: #767B92;
+        }
+        .designation {
+            font-size: 12px;
+            line-height: 18px;
+            color: #767B92;
+        }
+        .btn {
+            &.ash-btn {
+                background: #E3E5ED;
+                color: #1C293E;
+            }
+        }
+    }
+}

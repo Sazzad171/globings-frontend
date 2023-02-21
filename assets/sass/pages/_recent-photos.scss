@@ -1,0 +1,76 @@
+// recent photos page
+.rc-pht-pg-heading {
+    h6 {
+        font-size: 18px;
+    }
+}
+.recent-photos-area {
+    a {
+        width: 100%;
+    }
+    img {
+        border-radius: 22px;
+        margin-bottom: 24px;
+        &:hover {
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        }
+    }
+}
+
+// recent photos details page
+.rcnt-pts-details-box {
+    padding: 18px 30px;
+    .post-img {
+        border-radius: 20px;
+    }
+    .profile {
+        .img-col {
+            width: 40px;
+            margin-right: 12px;
+        }
+        img {
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+        }
+        .user-name {
+            font-weight: 600;
+        }
+        .date-time {
+            color: #888888;
+        }
+    }
+    .post-heading {
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .desc-heading {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 14px;
+    }
+    .details-text {
+        line-height: 24px;
+    }
+    .read-more-text {
+        font-weight: 500;
+    }
+    .loc-heading {
+        font-weight: 600;
+        font-size: 20px;
+        margin-bottom: 14px;
+    }
+    .map-box iframe {
+        width: 100%;
+        border-radius: 8px;
+    }
+    .address {
+        i {
+            color: #75869C;
+            font-size: 20px;
+        }
+        span {
+            color: #1C293E;
+        }
+    }
+}

@@ -1,0 +1,122 @@
+// common styles
+.auth-modal {
+    .modal-header {
+        .modal-title {
+            font-size: 16px;
+        }
+        i {
+            font-size: 26px;
+        }
+    }
+    .heading-text {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .modal-body {
+        padding: 24px;
+    }
+    .form-label {
+        color: #75869C;
+        font-weight: 500;
+        margin-bottom: 8px;
+        display: block;
+    }
+    .form-control {
+        border: 1px solid #E3E5ED;
+        border-radius: 8px;
+        margin-bottom: 16px;
+        padding: 10px 12px;
+        &::placeholder {
+            font-size: 14px;
+        }
+    }
+    .submit-btn {
+        border-radius: 8px;
+        padding: 12px 24px;
+    }
+}
+
+// signin modal
+.signin-modal {
+    .fogt-pass  {
+        font-weight: 600;
+        font-size: 14px;
+    }
+    .or-text {
+        font-size: 18px;
+        color: #75869C;
+        margin: 20px 0;
+        margin-bottom: -26px;
+        z-index: 10;
+        position: relative;
+        span {
+            background: #fff;
+            padding: 0 6px;
+        }
+    }
+    hr.or-text-line {
+        background-color: #D2D5DF;
+        margin-bottom: 28px;
+    }
+    .social-lgin-btn {
+        position: relative;
+        border-radius: 16px;
+        border: 1px solid #75869C !important;
+        padding: 12px 24px;
+        &:hover {
+            background-color: #eee;
+        }
+        img {
+            position: absolute;
+            left: 24px;
+            top: 10px;
+        }
+    }
+}
+
+// signup modal 
+.signup-modal {
+    .agree-chq {
+        color: #13192B;
+    }
+}
+
+// forgot password modal
+.forgt-pass-modal {
+    .modal-header {
+        i {
+            font-size: 18px;
+        }
+    }
+}
+
+// confirm code modal
+.code-modal{
+    .code-wrapper-box {
+        border: 1px solid #E3E5ED;
+        border-radius: 8px;
+        padding: 14px 20px;
+        display: flex;
+        width: 175px;
+        input {
+            border: 0;
+            border-bottom: 1px solid #000;
+            width: 14px;
+            margin-right: 24px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+// new password modal
+.new-pass-modal {
+    .form-control {
+        margin-bottom: 0;
+    }
+    .form-text {
+        margin-bottom: 16px;
+        font-size: 14px;
+    }
+}

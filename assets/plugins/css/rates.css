@@ -1,0 +1,21 @@
+.rates-container {
+    white-space: nowrap;       
+}
+
+.rates-green{
+    filter: brightness(0) saturate(100%) invert(71%) sepia(9%) saturate(3745%) hue-rotate(67deg) brightness(90%) contrast(94%);
+}
+
+.rates-blue{
+    filter: brightness(0) saturate(100%) invert(69%) sepia(40%) saturate(490%) hue-rotate(158deg) brightness(92%) contrast(92%);    
+}
+
+.rates-red{
+    filter: brightness(0) saturate(100%) invert(21%) sepia(70%) saturate(4945%) hue-rotate(352deg) brightness(87%) contrast(102%);
+}
+
+.rates-yellow{
+    filter: brightness(0) saturate(100%) invert(89%) sepia(82%) saturate(5150%) hue-rotate(9deg) brightness(105%) contrast(107%);
+}
+
+

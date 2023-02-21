@@ -1,0 +1,319 @@
+// page heading
+.friends-page-heading {
+    .heading {
+        font-size: 18px;
+    }
+}
+
+// nav pills
+.friend-nav-pills {
+    .nav-link {
+        font-size: 16px;
+        font-weight: 500;
+        color: #000;
+        padding: 12px 30px;
+        border-radius: 16px;
+        border: 1px solid transparent !important;
+        i {
+            font-size: 20px;
+        }
+        &.active {
+            color: #1872F6;
+            background-color: #fff;
+            border-color: #E3E5ED !important;
+        }
+    }
+}
+
+// friends home tab
+.friend-home-area {
+    padding: 30px;
+    .box-heading {
+        font-size: 18px;
+    }
+    .friend-profile-box {
+        border: 1px solid #E3E5ED;
+        border-radius: 15px;
+        .profile-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 14px;
+            margin-bottom: 12px;
+        }
+        .name {
+            margin-bottom: 12px;
+        }
+        .mutual-friends {
+            img {
+                width: 18px;
+                height: 18px;
+                object-fit: cover;
+                border-radius: 100%;
+                position: relative;
+                z-index: 0;
+                margin-left: -12px;
+                &.first {
+                    margin-left: 0;
+                    z-index: 1;
+                }
+            }
+            span {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+// friends suggestion tab
+.friend-suggestion-area {
+    .preview-area {
+        padding: 24px;
+        max-height: 100vh;
+        overflow-y: auto;
+        .main-img {
+            min-width: 60px;
+            img {
+                width: 60px;
+                height: 60px;
+                object-fit: cover;
+                border-radius: 100%;
+            }
+        }
+        .mutual-friends {
+            img {
+                width: 18px;
+                height: 18px;
+                object-fit: cover;
+                border-radius: 100%;
+                position: relative;
+                z-index: 0;
+                margin-left: -12px;
+                &.first {
+                    margin-left: 0;
+                    z-index: 1;
+                }
+            }
+            span {
+                font-size: 14px;
+            }
+        }
+        .friend-item-box {
+            &:last-child {
+                margin-bottom: 0 !important;
+            }
+        }
+    }
+    .blank-profile {
+        padding: 30px;
+        min-height: calc(100vh - 150px);
+        img {
+            width: 112px;
+        }
+    }
+}
+
+// friends and messages tab
+.message-full-area {
+    .preview-area {
+        padding: 24px 14px 14px;
+        max-height: calc(100vh - 155px);
+        overflow-y: auto;
+        @include customScrollbarTable();
+    }
+    .search-box {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #E3E5ED;
+        .input-group-text {
+            background: #FAFAFA;
+            border-top-left-radius: 24px;
+            border-bottom-left-radius: 24px;
+            border: 0;
+            padding: 12px 10px 12px 18px;
+        }
+        .form-control {
+            background: #FAFAFA;
+            border-top-right-radius: 24px;
+            border-bottom-right-radius: 24px;
+            border: 0;
+            padding: 12px;
+        }
+    }
+    .friend-count {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .friend-item-box {
+        padding: 6px;
+        border-radius: 6px;
+        .main-img {
+            min-width: 60px;
+            img {
+                width: 60px;
+                height: 60px;
+                object-fit: cover;
+                border-radius: 100%;
+            }
+        }
+        .mid-col {
+            width: 80%;
+        }
+        p {
+            font-size: 14px;
+        }
+        .msg-icon {
+            font-size: 18px;
+        }
+        &:last-child {
+            margin-bottom: 0 !important;
+        }
+        &:hover {
+            background-color: #FAFAFA;
+        }
+    }
+
+    // blank message box
+    .blank-message {
+        padding: 30px;
+        min-height: calc(100vh - 150px);
+        img {
+            width: 112px;
+        }
+    }
+
+    // messages box
+    .all-message-box {
+        .profile-area {
+            margin: 20px 20px 0;
+            border-bottom: 1px solid #E3E5ED;
+            img {
+                width: 40px;
+                height: 40px;
+                object-fit: cover;
+                margin-right: 12px;
+            }
+            h6 {
+                color: #2D2F34;
+            }
+            p {
+                color: #696969;
+                font-size: 11px;
+            }
+            .separator-dot {
+                width: 4px;
+                height: 4px;
+                background: #696969;
+                margin: 0 4px;
+                border-radius: 100%;
+            }
+            .active-dot {
+                width: 8px;
+                height: 8px;
+                background: #FBCA00;
+                margin: 0 4px;
+                border-radius: 100%;
+            }
+        }
+        .all-messages {
+            padding: 20px;
+            max-height: calc(100vh - 310px);
+            overflow-y: auto;
+            @include customScrollbarTable();
+            .date {
+                font-weight: 600;
+                color: #23262F;
+                font-size: 12px;
+                text-align: center;
+            }
+            .reply-msg-item {
+                img {
+                    width: 36px;
+                    height: 36px;
+                    object-fit: cover;
+                }
+                .msg-text {
+                    max-width: calc(80%);
+                    margin-left: 16px;
+                }
+                p {
+                    background: #F4F5F6;
+                    border-radius: 16px;
+                    padding: 14px 20px;
+                    font-size: 14px;
+                    color: #141416;
+                }
+            }
+            .time {
+                font-size: 12px;
+                font-weight: 600;
+                color: #DEE0E2;
+                text-align: right;
+            }
+            .my-msg {
+                font-size: 14px;
+                max-width: 80%;
+                margin-left: auto;
+                background: #434549;
+                border-radius: 32px;
+                padding: 12px 24px;
+                color: #FCFCFD;
+            }
+        }
+        .new-message-area {
+            background: #F8F9FD;
+            border-top: 1px solid #E3E5ED;
+            padding: 16px 20px;
+            .send-msg-box {
+                width: 75%;
+            }
+            .input-group-text {
+                background: #fff;
+                border-top-right-radius: 16px;
+                border-bottom-right-radius: 16px;
+                border: 0;
+                padding: 10px 16px;
+                i {
+                    color: #5897F4;
+                }
+            }
+            .form-control {
+                border-top-left-radius: 16px;
+                border-bottom-left-radius: 16px;
+                border: 0;
+                padding: 10px 16px;
+                font-size: 12px;
+                border-right: 1px solid #E3E5ED !important;
+                &::placeholder {
+                    font-size: 12px;
+                }
+            }
+            .left-icon {
+                background-color: #fff;
+                color: #2D2F34;
+                padding: 12px;
+                border-radius: 100%;
+            }
+            .right-icon {
+                background-color: #fff;
+                color: #2D2F34;
+                padding: 12px;
+                border-radius: 100%;
+            }
+        }
+    }
+}
+
+// responsiveness
+@include max-media-width(1500) {
+    .friend-home-area {
+        .profile-img {
+            height: 170px !important;
+        }
+    }
+}
+@include max-media-width(767) {
+    .friend-home-area {
+        padding: 20px;
+    }
+}

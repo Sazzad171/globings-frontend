@@ -1,0 +1,38 @@
+// mobile and tab footer
+.footer-sm-dv {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  padding: 12px 0;
+  border-top: 1px solid #e3e5ed;
+  z-index: 1000;
+  a {
+    display: flex;
+    align-items: center;
+    gap: 6px 12px;
+    .menu-text {
+      display: none;
+    }
+    &.active {
+      color: #000;
+      font-weight: 600;
+      font-size: 12px;
+      border-radius: 50px;
+      background: #e3e5ed;
+      padding: 6px 16px 6px 14px;
+      i {
+        color: #000;
+      }
+      .menu-text {
+        display: block;
+      }
+      svg {
+        path {
+          fill: #000;
+          stroke: #000;
+        }
+      }
+    }
+  }
+}

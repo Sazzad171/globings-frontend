@@ -1,0 +1,33 @@
+.btn-1 {
+    padding: 8px 24px;
+    background: #1872F6;
+    border-radius: 24px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    &:hover {
+        background: #0054cf;
+        color: #fff;
+    }
+}
+.btn-2 {
+    padding: 10px 24px;
+    background: #1872F6;
+    border-radius: 36px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    &:hover {
+        background: #0054cf;
+        color: #fff;
+    }
+    &.white-var {
+        background: #E3E5ED;
+        color: #1C293E;
+        &:hover {
+            background-color: #bcbdbf;
+        }
+    }
+}
